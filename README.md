@@ -47,7 +47,7 @@ A *4Cars* é uma empresa que tem surfado na onda dos apps de motoristas. Sua pro
 
 O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue os modelos iniciais:
 
-![wireframe-1](./Media/wireframe-1.jpg)
-![wireframe-2](./Media/wireframe-2.jpg)
+![wireframe-1](./media-readme/wireframe-1.jpg)
+![wireframe-2](./media-readme/wireframe-2.jpg)
 
 ***

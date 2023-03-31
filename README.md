@@ -21,6 +21,7 @@
 ## Índice
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
+* [2. Desenho de interface do usuário](#1-Desenho-de-interface-do-usuário)
 <!-- * [2. Instalações](#2-instalações)
 * [3. Iniciando](#3-iniciando)
 * [4. Como testar](#4-como-testar)
@@ -39,5 +40,14 @@ Nesse projeto, o objetivo era criar uma *Landing Page*, ou seja, um site de apen
 A partir disso, a Labenu disponibilizou uma lista de empresas fictícias da qual escolhi a *4cars* para desenvolver sua Landing Page.
 
 A *4Cars* é uma empresa que tem surfado na onda dos apps de motoristas. Sua proposta é oferecer carros para serem alugados por motoristas a um custo razoável, aumentando a oportunidade para quem não têm dinheiro para comprar um carro. Seus concorrentes atuais são empresas tradicionais, como Localiza, e startups, como Kovi. Você tem duas linhas de produto: (i) carros populares e (ii) transporte de luxo. Você precisa criar um site capaz de comunicar modernidade e baixo custo, se posicionando como uma plataforma totalmente digital e de fácil acesso para motoristas jovens que estão buscando entrar nesse mercado.
+
+***
+
+## 2. Desenho da interface do usuário (IU)
+
+O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue os modelos iniciais:
+
+![wireframe-1](./Media/wireframe-1.jpg)
+![wireframe-2](./Media/wireframe-2.jpg)
 
 ***

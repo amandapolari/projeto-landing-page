@@ -1,0 +1,13 @@
+/* Apenas algumas configurações para melhor visualização da estrutura da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo, .imagem {
+    height: 8vw;
+}
+
+.icones {
+    height: 2vw;
+}

@@ -1,16 +1,40 @@
+/* Zerando */
 * {
     margin: 0;
     padding: 0;
-}
-
-body{
     font-family: Open Sans;
 }
 
-.logo, .imagem {
-    height: 8vw;
+/* Estilização DESKTOP */
+
+/* Bordas para ajudar a definir as seções: */
+section, header, footer {
+    border: solid 1px red;
 }
 
+/* Definições do Header: */
+.logo, .imagem {
+    height: 10vw;
+}
+
+/* Section Serviços */
+
+
+/* Section Localização */
+
+
+/* Section Promoções */
+
+
+/* Section Perguntas */
+
+
+/* Section Fale Conosco */
+
+
+/* Footer */
 .icones {
     height: 2vw;
 }
+
+/* Estilização MOBILE */

@@ -76,5 +76,5 @@ O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue o
 3. Os textos em parágrafos terão a cor preta;
 4. Todos os botões terão cor rosa, com texto branco em fonte 1x maior que a utilizada nos parágrafos;
 5. As seções terão fundo rosa, título preto, e os labels dos inputs serão pretos e brancos, respectivamente;
-6. O rodapé terá a cor cinza rosa escuro.
+6. O rodapé terá a rosa escuro.
 ***

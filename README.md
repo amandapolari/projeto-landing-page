@@ -21,7 +21,8 @@
 ## Índice
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
-* [2. Desenho de interface do usuário](#1-Desenho-de-interface-do-usuário)
+* [2. Desenho da interface do usuário](#2-desenho-da-interface-do-usuário)
+* [3. Paleta, padrão e cores](#3-paleta-padrão-e-cores)
 <!-- * [2. Instalações](#2-instalações)
 * [3. Iniciando](#3-iniciando)
 * [4. Como testar](#4-como-testar)
@@ -43,11 +44,37 @@ A *4Cars* é uma empresa que tem surfado na onda dos apps de motoristas. Sua pro
 
 ***
 
-## 2. Desenho da interface do usuário (IU)
+## 2. Desenho da interface do usuário
 
 O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue os modelos iniciais:
 
 ![wireframe-1](./media-readme/wireframe-1.jpg)
 ![wireframe-2](./media-readme/wireframe-2.jpg)
 
+***
+
+## 3. Paleta, padrão e cores
+### Paleta de cores:
+![paleta-de-cores](./media-readme/paleta-de-cores.png)
+### Cores em hexadecimal:
+`#000000`
+
+`#5E5E5F`
+
+`#F8F8FF`
+
+`#F2D7D8`
+
+`#EA9FA2`
+
+`#FA5D65`
+
+### Definição de cores e tamanhos:
+
+1. Os títulos e textos terão fonte **Open Sans;**
+2. Os títulos serão 2 vezes maiores que os parágrafos;
+3. Os textos em parágrafos terão a cor preta;
+4. Todos os botões terão cor rosa, com texto branco em fonte 1x maior que a utilizada nos parágrafos;
+5. As seções terão fundo rosa, título preto, e os labels dos inputs serão pretos e brancos, respectivamente;
+6. O rodapé terá a rosa escuro.
 ***

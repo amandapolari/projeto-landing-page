@@ -1,4 +1,4 @@
-/* Zerando */
+/* config geral */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@
     height: 100vh;
 }
 
+/* header e footer */
 header,
 footer {
     height: 10vh;
@@ -22,6 +23,7 @@ footer {
     text-align: center;
 }
 
+/* nav geral */
 nav {
     display: flex;
     align-items: center;
@@ -31,6 +33,7 @@ nav {
     /* background-color: lightcoral; */
 }
 
+/* nav superior */
 .lista-nav-superior {
     /* background-color: blueviolet; */
     height: 6vh;
@@ -40,6 +43,7 @@ nav {
     justify-content: space-around;
 }
 
+/* ancoras e logos */
 .ancora {
     font-size: 2vh;
     color: #fa5d65;
@@ -50,6 +54,7 @@ nav {
     height: 8vh;
 }
 
+/* body e multiplas tags */
 img {
     height: 4vh;
 }
@@ -68,6 +73,10 @@ ul {
     list-style: none;
 }
 
+/* organização das seções */
+
+
+/* footer e nav inferior */
 footer {
     display: flex;
     flex-direction: row;

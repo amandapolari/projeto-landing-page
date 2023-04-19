@@ -2,39 +2,91 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Open Sans;
 }
 
-/* Estilização DESKTOP */
-
-/* Bordas para ajudar a definir as seções: */
-section, header, footer {
-    border: solid 1px red;
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-/* Definições do Header: */
-.logo, .imagem {
-    height: 10vw;
+header,
+footer {
+    height: 10vh;
+    background-color: #f2d7d8;
+    padding: 1vh;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
 }
 
-/* Section Serviços */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: lightcoral; */
+}
 
+.lista-nav-superior {
+    /* background-color: blueviolet; */
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-/* Section Localização */
+.ancora {
+    font-size: 2vh;
+    color: #fa5d65;
+    font-weight: 600;
+}
 
+.logo {
+    height: 8vh;
+}
 
-/* Section Promoções */
+img {
+    height: 4vh;
+}
 
+main {
+    flex-grow: 1;
+    background-color: #f8f8ff;
+    padding: 1vh;
+}
 
-/* Section Perguntas */
+a {
+    text-decoration: none;
+}
 
+ul {
+    list-style: none;
+}
 
-/* Section Fale Conosco */
+footer {
+    display: flex;
+    flex-direction: row;
+}
 
+.nav-inferior {
+    display: flex;
+    justify-content: flex-end;
+}
 
-/* Footer */
+.lista-nav-inferior {
+    display: flex;
+    /* background-color: blueviolet; */
+    height: 6vh;
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .icones {
-    height: 2vw;
+    height: 4vh;
 }
-
-/* Estilização MOBILE */

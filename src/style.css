@@ -50,8 +50,6 @@ nav {
 
 figure {
     width: 12%;
-    /* margin: 0 0 0 4% ; */
-    /* padding: 0 0 0 48px; */
 }
 
 .logo {
@@ -82,6 +80,22 @@ ul {
     list-style: none;
 }
 
+.botao {
+    background: linear-gradient(
+        129.88deg,
+        rgba(236, 151, 155, 0.54) 49.46%,
+        rgba(238, 141, 145, 0.47) 72.1%,
+        rgba(243, 121, 127, 0.47) 96.55%
+    );
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    border: 1px solid #fa5d65;
+    color: #000000;
+    padding: 0.3vw;
+    height: 5vh;
+    width: 15vh;
+}
+
 /* organização das seções */
 /* primeira seção: */
 #secao-servicos {
@@ -96,7 +110,7 @@ ul {
 h1 {
     color: #000000;
     font-size: 3vh;
-    border-bottom: 2px solid #FA5D65;
+    border-bottom: 2px solid #fa5d65;
     display: grid;
     text-align: center;
     grid-row: 1 / 2;
@@ -112,7 +126,6 @@ h1 {
     border-radius: 10px;
     padding: 2vh;
     display: grid;
-    /* grid-template: repeat(4, 1fr) / 1fr; */
     grid-template: 8vh 1fr 1fr 1fr / 1fr;
     justify-self: center;
     align-self: center;
@@ -123,7 +136,7 @@ h1 {
     grid-column: 1 / 2;
     justify-self: center;
     align-self: center;
-    border-bottom: 2px solid #FA5D65;
+    border-bottom: 2px solid #fa5d65;
 }
 
 .p-da-section-servicos,
@@ -148,23 +161,17 @@ h1 {
 }
 
 .botao-da-secao-servicos {
-    height: 50%;
-    width: 50%;
-    border-radius: 10px;
-    padding: 0.5vh;
     grid-row: 4 / 5;
     grid-column: 1 / 2;
     align-self: center;
     justify-self: center;
     font-size: 2vh;
 }
-
 /* ----------- */
 
 /* segunda seção: */
 #secao-localizacao {
     background-color: #f2d7d8;
-    /* display: grid; */
 }
 
 .article-da-localizacao {
@@ -175,7 +182,6 @@ h1 {
     gap: 4vh;
 }
 
-
 #subtitulo-secao-loc {
     width: 100%;
     display: grid;
@@ -183,7 +189,6 @@ h1 {
     grid-column: 1 / 4;
     align-self: center;
     justify-content: center;
-    /* width: 80%; */
 }
 
 #imagem-mapa {
@@ -203,30 +208,79 @@ h1 {
 }
 
 .botao-da-secao-localizacao {
-    height: 5vh;
-    width: 15vh;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     align-self: start;
     justify-self: center;
 }
-
-
-
-
 /* ----------- */
 
+/* terceira seção: */
 #secao-promocao {
-    background-color: #ea9fa2;
+    background-color: #f2f3f4;
 }
 
+.article-da-promocao {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    margin: 0 16vh;
+    height: 100%;
+    gap: 4vh;
+}
+
+#subtitulo-secao-promo {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+}
+
+.p-da-section-promo {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    align-self: end;
+    justify-self: center;
+    width: 60vh;
+    font-size: 4vh;
+}
+
+.imagens-secao-promo {
+    height: 45vh;
+}
+
+#carro-amigos {
+    grid-row: 2 /4;
+    grid-column: 3 / 4;
+}
+
+#carros-amigos {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+}
+
+.botao-da-secao-promo {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 /4;
+    align-self: start;
+    justify-self: center;
+}
+/* ----------- */
+
+/* quarta seção */
 #secao-perguntas {
     background-color: #f2d7d8;
 }
+/* ----------- */
 
+/* quinta seção */
 #secao-fale-conosco {
     background-color: #ea9fa2;
 }
+/* ----------- */
 
 /* footer e nav inferior */
 footer {
@@ -241,7 +295,6 @@ footer {
 
 .lista-nav-inferior {
     display: flex;
-    /* background-color: blueviolet; */
     height: 6vh;
     width: 20%;
     align-items: center;

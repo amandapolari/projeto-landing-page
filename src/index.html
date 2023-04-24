@@ -38,27 +38,27 @@
                 <section class="secao" id="secao-servicos">
                     <h1>NOSSO CARRO, SUA CHANCE!</h1>
                     <article class="article-da-section-servicos">
-                        <h2 class="subtitulo">Acessível</h2>
+                        <h2 class="subtitulo subtitulo-section-servicos">
+                            Acessível
+                        </h2>
                         <p class="p-da-section-servicos">
                             A 4Cars oferece carros para serem alugados por
                             motoristas a um custo razoável.
                         </p>
-                        <button class="botao botao-da-secao-servicos">
-                            Fale Conosco
-                        </button>
                     </article>
                     <article class="article-da-section-servicos">
-                        <h2 class="subtitulo">Moderno</h2>
+                        <h2 class="subtitulo subtitulo-section-servicos">
+                            Moderno
+                        </h2>
                         <p class="p-da-section-servicos">
                             A 4Cars é uma plataforma 100% digital,
                             possibilitando o aluguel de carros sem sair de casa!
                         </p>
-                        <button class="botao botao-da-secao-servicos">
-                            Fale Conosco
-                        </button>
                     </article>
                     <article class="article-da-section-servicos">
-                        <h2 class="subtitulo">Prático</h2>
+                        <h2 class="subtitulo subtitulo-section-servicos">
+                            Prático
+                        </h2>
                         <p class="p-da-section-servicos">
                             Possuimos amplo modelo de pagamento:
                         </p>
@@ -67,12 +67,11 @@
                             <li>Débito</li>
                             <li>Pix</li>
                         </ul>
-                        <button class="botao botao-da-secao-servicos">
-                            Fale Conosco
-                        </button>
                     </article>
                     <article class="article-da-section-servicos">
-                        <h2 class="subtitulo">Diverso</h2>
+                        <h2 class="subtitulo subtitulo-section-servicos">
+                            Diverso
+                        </h2>
                         <p class="p-da-section-servicos">
                             Possuimos duas linhas de produto:
                         </p>
@@ -80,10 +79,13 @@
                             <li>Carros Populares</li>
                             <li>Carros de Luxo</li>
                         </ul>
-                        <button class="botao botao-da-secao-servicos">
-                            Fale Conosco
-                        </button>
                     </article>
+                    <button
+                        class="botao botao-da-secao-servicos"
+                        id="botao-principal-servicos"
+                    >
+                        Fale Conosco
+                    </button>
                 </section>
                 <section class="secao" id="secao-localizacao">
                     <article class="article-da-localizacao">
@@ -157,16 +159,9 @@
                                 class="dd-da-section-perguntas"
                                 id="dd-da-primeira-pergunta"
                             >
-                                Nossas únicas restrições são:
+                                Ter no mínimo 18 anos e estar com a CNH
+                                regularizada
                             </dd>
-                            <ul class="ul-da-section-perguntas">
-                                <li class="li-da-section-perguntas">
-                                    Ter no mínimo 18 anos
-                                </li>
-                                <li class="li-da-section-perguntas">
-                                    Estar com a CNH regularizada
-                                </li>
-                            </ul>
                         </dl>
                         <dl class="lista-definicao" id="dl-segunda-pergunta">
                             <dt
@@ -231,23 +226,26 @@
                         />
                         <form action="#">
                             <!-- <label for="nome">Nome</label> -->
-                            <input type="text" id="nome" placeholder="Digite o seu nome"/>
+                            <input
+                                type="text"
+                                id="nome"
+                                placeholder="Digite o seu nome"
+                            />
                             <!-- <label for="email">Email</label> -->
-                            <input type="text" id="email" placeholder="Digite o seu e-mail" />
+                            <input
+                                type="text"
+                                id="email"
+                                placeholder="Digite o seu e-mail"
+                            />
                             <!-- <label for="mensagem">Sua Mensagem</label> -->
                             <textarea
                                 name=""
                                 id="mensagem"
                                 placeholder="Digite a sua mensagem"
                             ></textarea>
-                            <!-- <textarea
-                                name=""
-                                id="mensagem"
-                                cols="80"
-                                rows="30"
-                                placeholder="Digite a sua mensagem"
-                            ></textarea> -->
-                            <button class="botao" id="botao-enviar">Enviar</button>
+                            <button class="botao" id="botao-enviar">
+                                Enviar
+                            </button>
                         </form>
                     </article>
                 </section>

@@ -115,7 +115,7 @@ ul {
 
 h1 {
     color: #000000;
-    font-size: 3vh;
+    font-size: 4vh;
     border-bottom: 2px solid #fa5d65;
     display: grid;
     text-align: center;
@@ -125,9 +125,9 @@ h1 {
     align-self: end;
 }
 
-.subtitulo-section-servicos {
+/* .subtitulo-section-servicos {
     font-size: 2.5vh;
-}
+} */
 
 .article-da-section-servicos {
     /* background-color: #ea9fa2; */
@@ -135,7 +135,7 @@ h1 {
     height: 50vh;
     width: 80%;
     border-radius: 10px;
-    padding: 2vh;
+    /* padding: 2vh; */
     display: grid;
     grid-template: 8vh 1fr 1fr / 1fr;
     place-self: center;
@@ -148,6 +148,7 @@ h1 {
     justify-self: center;
     align-self: center;
     border-bottom: 2px solid #fa5d65;
+    font-size: 4vh;
 }
 
 .p-da-section-servicos,
@@ -277,41 +278,50 @@ h1 {
 /* quarta seção */
 #secao-perguntas {
     background-color: #fec9c9;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template: 1fr 1fr / 0.1fr 1.5fr;
+    /* padding: 2vh; */
 }
 
 .article-da-perguntas {
-    display: grid;
+    grid-column: 2 / 3;
+    justify-content: center;
+    align-items: center;
     margin: 0 16vh;
+    display: grid;
+    /* grid-template: repeat(5, 1fr) / 1fr; */
+    grid-template: 1fr / 1fr;
     height: 90%;
-    gap: 4vh;
     font-size: 2vh;
+    gap: 4vh;
 }
 
 #subtitulo-secao-perguntas {
+    margin: 0 16vh;
     display: grid;
     grid-row: 1 / 2;
-    grid-column: 1 / 6;
-    width: 100%;
+    grid-column: 1 / 3;
+    width: 84%;
     align-self: center;
     justify-content: center;
 }
 
 #imagem-secao-perguntas {
     display: grid;
-    grid-row: 2 / 6;
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
-    align-self: center;
-    justify-self: center;
-    height: 60vh;
+    align-self: flex-end;
+    height: 70vh;
 }
 
 .lista-definicao {
-    grid-column: 2 / 6;
-    background-color: #efefef;
-    border-radius: 20px;
+    grid-column: 2 / 3;
+    height: 13vh;
     padding: 2vh;
     width: 90%;
+    background: #f8f4f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* align-items: center; */
 }
 
 .dt-das-perguntas {

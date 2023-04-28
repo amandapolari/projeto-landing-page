@@ -172,7 +172,7 @@ a:hover {
 .article-da-section-servicos:hover {
     transform: scale(1.01);
     /* opacity: 0.9; */
-    transition: 500ms linear;
+    /* transition: 500ms linear; */
 }
 /* ----------- */
 
@@ -204,24 +204,35 @@ h1 {
 }
 
 .article-da-section-servicos {
+    padding: 1.5vh;
     /* background-color: #ea9fa2; */
-    background-color: #ea9fa16e;
+    /* background-color: #ea9fa16e; */
     height: 50vh;
     width: 80%;
-    border-radius: 10px;
+    /* border-radius: 20px; */
     /* padding: 2vh; */
     display: grid;
     grid-template: 8vh 1fr 1fr / 1fr;
     place-self: center;
-    border: 1px solid #f94c55;
+    /* border: 1px solid #f94c55; */
+    background: #f2d2d6;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 49px;
 }
 
-.p-da-section-servicos,
+/* .p-da-section-servicos,
 .ul-da-section-servicos {
     font-size: 1.3em;
     text-align: center;
-    /* align-items: stretch; */
     padding: 0 0.5vh;
+} */
+
+.p-da-section-servicos {
+    padding: 1vh;
+    font-size: 1.5em;
+    text-align: center;
+    /* align-items: stretch; */
+    /* padding: 0 0.5vh; */
 }
 
 .p-da-section-servicos {

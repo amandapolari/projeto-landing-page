@@ -100,6 +100,14 @@ ul {
     height: 5vh;
     width: 15vh;
 }
+.subtitulo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 2px solid #fa5d65;
+    font-size: 4vh;
+}
 /* ----------- */
 
 /* organização das seções */
@@ -125,9 +133,9 @@ h1 {
     align-self: end;
 }
 
-/* .subtitulo-section-servicos {
+.subtitulo-section-servicos {
     font-size: 2.5vh;
-} */
+}
 
 .article-da-section-servicos {
     /* background-color: #ea9fa2; */
@@ -140,15 +148,6 @@ h1 {
     grid-template: 8vh 1fr 1fr / 1fr;
     place-self: center;
     border: 1px solid #f94c55;
-}
-
-.subtitulo {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    justify-self: center;
-    align-self: center;
-    border-bottom: 2px solid #fa5d65;
-    font-size: 4vh;
 }
 
 .p-da-section-servicos,
@@ -228,51 +227,54 @@ h1 {
 /* terceira seção: */
 #secao-promocao {
     background-color: #f2f3f4;
+    font-size: 1.5vh;
 }
 
 .article-da-promocao {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
     margin: 0 16vh;
     height: 100%;
-    gap: 4vh;
+    gap: 2vh;
 }
 
 #subtitulo-secao-promo {
     display: grid;
     grid-row: 1 / 2;
-    grid-column: 1 / 4;
+    grid-column: 1 / 2;
     width: 100%;
     align-self: center;
     justify-content: center;
 }
 
 .p-da-section-promo {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
     text-align: center;
-    align-self: end;
+    /* align-self: end; */
+    align-self: center;
     justify-self: center;
     width: 60vh;
     font-size: 4vh;
 }
 
-.imagens-secao-promo {
-    height: 45vh;
+.botao-da-secao-promo {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: start;
+    justify-self: center;
+    font-size: 1.5vh;
 }
 
 #carro-amigos {
-    grid-row: 2 /4;
-    grid-column: 3 / 4;
-}
-
-.botao-da-secao-promo {
-    display: grid;
-    grid-column: 2 / 3;
-    grid-row: 3 /4;
-    align-self: start;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    height: 60vh;
+    align-self: center;
     justify-self: center;
 }
+
 /* ----------- */
 
 /* quarta seção */

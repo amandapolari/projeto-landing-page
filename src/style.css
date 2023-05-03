@@ -12,28 +12,27 @@
 
 .container {
     margin-top: 10vh;
-    display: flex;
     flex-direction: column;
     height: 100vh;
 }
-/* ----------- */
+/* ---------------------------------------- */
 
-/* header e footer */
+/* => Config. comum para conteúdo do header e footer */
+.estilo-flex {
+    display: flex;
+}
+
 header,
 footer {
     height: 10vh;
     background-color: #f2d7d8;
     padding: 1.2vh;
     justify-content: space-between;
-    display: flex;
     text-align: center;
     z-index: 1000;
-    /* box-shadow: 0px 0px 4px 15px rgba(0, 0, 0, 0.3); */
 }
 
 header {
-    /* position: sticky;
-    top: 0; */
     position: fixed;
     width: 100%;
     left: 0px;
@@ -44,100 +43,104 @@ header {
 footer {
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
+/* ---------------------------------------- */
 
-/* ----------- */
-
-/* nav geral */
-nav {
-    display: flex;
+/* => Config. comum para conteúdo do header */
+nav,
+.lista-nav-superior {
     align-items: center;
+    width: 100%;
+}
+
+nav {
     justify-content: center;
     height: 100%;
-    width: 100%;
 }
-/* ----------- */
 
-/* nav superior */
 .lista-nav-superior {
-    height: 6vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
+    height: 6vh;
 }
-/* ----------- */
 
-/* ancoras e logos */
 figure {
     width: 12%;
+}
+
+.ancora,
+.dt-das-perguntas {
+    font-weight: 600;
 }
 
 .ancora {
     font-size: 2.2vh;
     color: #fa5d65;
-    font-weight: 600;
 }
 
 .logo {
     height: 8vh;
 }
-/* ----------- */
+/* ---------------------------------------- */
 
-/* body e outras tags */
-main {
+/* => Config. comum para corpo da página */
+.estilo-grid {
     display: grid;
-    flex-grow: 1;
+}
+
+main,
+#secao-servicos {
     background-color: #f8f8ff;
+}
+
+main {
+    flex-grow: 1;
 }
 
 section {
     height: 90vh;
 }
 
-/*colocar ancoras de volta*/
-
 ul {
     list-style: none;
 }
 
+h1,
 .botao {
-    background: linear-gradient(
-        129.88deg,
-        rgba(236, 151, 155, 0.54) 49.46%,
-        rgba(238, 141, 145, 0.47) 72.1%,
-        rgba(243, 121, 127, 0.47) 96.55%
-    );
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    border: 1px solid #fa5d65;
     color: #000000;
+}
+
+.botao,
+.article-da-section-servicos {
+    background: #f2d2d6;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.botao {
+    border: 1px solid rgba(250, 93, 101, 0.17);
+    border-radius: 20px;
     padding: 0.3vw;
     height: 5vh;
     width: 15vh;
     justify-content: center;
     align-items: center;
-
 }
 
+h1,
 .subtitulo {
-    /* grid-row: 1 / 2;
-    grid-column: 1 / 2; */
-    justify-self: center;
-    align-self: center;
     border-bottom: 2px solid #fa5d65;
     font-size: 4vh;
 }
-/* ----------- */
+
+.subtitulo {
+    justify-self: center;
+    align-self: center;
+}
+/* ---------------------------------------- */
 
 /* hover's: */
-
-/* para comparação */
 a {
     text-decoration: none;
     color: initial;
 }
-
-/* ---- */
 
 a:hover {
     color: #f41b22;
@@ -161,11 +164,8 @@ a:hover {
     grid-column: 1 / 2;
     justify-self: center;
     align-self: center;
-    /* font-size: 4vh; */
-    /* float: left; */
-    /* margin: 20px; */
     padding: 2px 3px;
-    /* => se tiver esse position quebra tudo */
+    /* => se tirar esse position quebra tudo */
     position: relative;
     z-index: 998;
 }
@@ -193,16 +193,20 @@ a:hover {
 
 .article-da-section-servicos:hover {
     transform: scale(1.01);
-    /* opacity: 0.9; */
-    /* transition: 500ms linear; */
 }
-/* ----------- */
+/* ---------------------------------------- */
 
 /* organização das seções */
+
+/* configurações em comum das sections: */
+#secao-localizacao,
+#secao-perguntas {
+    background-color: #fec9c9;
+}
+/* ---------- */
+
 /* primeira seção: */
 #secao-servicos {
-    background-color: #f8f8ff;
-    display: grid;
     grid-template: 0.15fr 0.8fr 0.2fr / repeat(4, 1fr);
     gap: 1vh;
     justify-content: center;
@@ -210,10 +214,6 @@ a:hover {
 }
 
 h1 {
-    color: #000000;
-    font-size: 4vh;
-    border-bottom: 2px solid #fa5d65;
-    display: grid;
     text-align: center;
     grid-row: 1 / 2;
     grid-column: 1 / 5;
@@ -227,18 +227,11 @@ h1 {
 
 .article-da-section-servicos {
     padding: 1.5vh;
-    /* background-color: #ea9fa2; */
-    /* background-color: #ea9fa16e; */
     height: 45vh;
     width: 80%;
-    /* border-radius: 20px; */
     /* padding: 2vh; */
-    display: grid;
     grid-template: 8vh 1fr 1fr / 1fr;
     place-self: center;
-    /* border: 1px solid #f94c55; */
-    background: #f2d2d6;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 49px;
 }
 
@@ -254,12 +247,9 @@ h1 {
     font-size: 1.5em;
     text-align: center;
     align-items: flex-start;
-    /* align-items: stretch; */
-    /* padding: 0 0.5vh; */
 }
 
 .p-da-section-servicos {
-    display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     line-height: 1.5em;
@@ -279,12 +269,7 @@ h1 {
 /* ----------- */
 
 /* segunda seção: */
-#secao-localizacao {
-    background-color: #f2d7d8;
-}
-
 .article-da-localizacao {
-    display: grid;
     grid-template: 0.3fr 1fr 1fr/ 1fr 1fr;
     margin: 0 16vh;
     height: 100%;
@@ -293,10 +278,8 @@ h1 {
 
 #subtitulo-secao-loc {
     width: 100%;
-    display: grid;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
-    /* align-self: center; */
     align-self: end;
     justify-content: center;
 }
@@ -332,7 +315,6 @@ h1 {
 }
 
 .article-da-promocao {
-    display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
     margin: 0 16vh;
     height: 100%;
@@ -340,7 +322,6 @@ h1 {
 }
 
 #subtitulo-secao-promo {
-    display: grid;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     width: 100%;
@@ -358,11 +339,9 @@ h1 {
     width: 60vh;
     font-size: 3.5vh;
     padding-top: 2vh;
-    /* background-color: #f41b22; */
 }
 
 .botao-da-secao-promo {
-    display: grid;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     align-self: start;
@@ -377,13 +356,10 @@ h1 {
     align-self: center;
     justify-self: center;
 }
-
 /* ----------- */
 
 /* quarta seção */
 #secao-perguntas {
-    background-color: #fec9c9;
-    display: grid;
     grid-template: 1fr 1fr / 0.1fr 1.5fr;
 }
 
@@ -392,7 +368,6 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0 16vh;
-    display: grid;
     grid-template: 1fr / 1fr;
     height: 90%;
     font-size: 2vh;
@@ -401,7 +376,6 @@ h1 {
 
 #subtitulo-secao-perguntas {
     margin: 0 16vh;
-    display: grid;
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     width: 84%;
@@ -410,7 +384,6 @@ h1 {
 }
 
 #imagem-secao-perguntas {
-    display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     align-self: flex-end;
@@ -428,7 +401,6 @@ h1 {
 
 .dt-das-perguntas {
     font-size: 2.3vh;
-    font-weight: 600;
 }
 
 .dd-da-section-perguntas {
@@ -444,7 +416,6 @@ h1 {
 }
 
 .article-contato {
-    display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
     margin: 0 16vh;
     height: 100%;
@@ -453,7 +424,6 @@ h1 {
 }
 
 #subtitulo-secao-contato {
-    display: grid;
     width: 80%;
     align-self: start;
     justify-content: center;
@@ -461,7 +431,6 @@ h1 {
 }
 
 form {
-    display: grid;
     grid-row: 2 / 6;
     grid-column: 1 / 2;
     border-radius: 1rem;
@@ -503,21 +472,18 @@ textarea {
 
 /* footer e nav inferior */
 footer {
-    display: flex;
     flex-direction: row;
 }
 
 .nav-inferior {
-    display: flex;
     justify-content: flex-end;
 }
 
 .lista-nav-inferior {
-    display: flex;
+    justify-content: space-evenly;
     height: 6vh;
     width: 20%;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .icones {

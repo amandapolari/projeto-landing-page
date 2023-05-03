@@ -46,10 +46,27 @@ A *4Cars* é uma empresa que tem surfado na onda dos apps de motoristas. Sua pro
 
 ## 2. Desenho da interface do usuário
 
-O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue os modelos iniciais:
+### 2.1 Wireframe
 
-![wireframe-1](./media-readme/wireframe-1.jpg)
+O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue o modelo inicial:
+
 ![wireframe-2](./media-readme/wireframe-2.jpg)
+
+### 2.2 Protótipo de Alta Fidelidade
+Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você pode conferir os modelos clicando [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
+
+#### 2.2.1 Modelo Desktop
+![wireframe-2](./media-readme/desktop.png)
+
+#### 2.2.2 Modelo para Tablet
+![wireframe-2](./media-readme/ipad-pro-11.png)
+
+#### 2.2.3 Modelo para iPhone 8
+![wireframe-2](./media-readme/iphone-8.png)
+
+#### 2.2.4 Modelo para iPhone SE
+![wireframe-2](./media-readme/iphone-se.png)
+
 
 ***
 
@@ -74,7 +91,8 @@ O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue o
 1. Os títulos e textos terão fonte **Open Sans;**
 2. Os títulos serão 2 vezes maiores que os parágrafos;
 3. Os textos em parágrafos terão a cor preta;
-4. Todos os botões terão cor rosa, com texto branco em fonte 1x maior que a utilizada nos parágrafos;
-5. As seções terão fundo rosa, título preto, e os labels dos inputs serão pretos e brancos, respectivamente;
+4. Todos os botões terão cor rosa, com texto preto em fonte 1x maior que a utilizada nos parágrafos;
+5. As seções terão fundo rosa ou branco, algumas com imagens de background, título preto, e os labels dos inputs serão pretos e brancos, respectivamente;
 6. O rodapé terá a rosa escuro.
+
 ***

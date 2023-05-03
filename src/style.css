@@ -489,3 +489,18 @@ footer {
 .icones {
     height: 4vh;
 }
+
+/* RESPONSIVIDADE */
+/* tablet */
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+    header {
+        background-color: blue
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    header {
+        background-color: red;
+    }
+}

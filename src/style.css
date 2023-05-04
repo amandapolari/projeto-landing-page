@@ -11,7 +11,7 @@
 }
 
 .container {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     flex-direction: column;
     height: 100vh;
 }
@@ -33,7 +33,9 @@ footer {
 }
 
 header {
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -46,8 +48,15 @@ footer {
 /* ---------------------------------------- */
 
 /* => Config. comum para conteúdo do header */
+#navegacao-superior {
+    display: flex;
+    /* background-color: lightgreen; */
+    justify-content: space-between;
+}
+
 nav,
 .lista-nav-superior {
+    display: flex;
     align-items: center;
     width: 100%;
 }
@@ -58,8 +67,15 @@ nav {
 }
 
 .lista-nav-superior {
+    /* background-color: lightblue; */
+    width: 100%;
     justify-content: space-around;
+    /* margin: 3vw; */
     height: 6vh;
+}
+
+.nav-list {
+    width: 100%;
 }
 
 figure {
@@ -491,22 +507,58 @@ footer {
 }
 
 /* RESPONSIVIDADE */
+/* Configurações para menu mobile */
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+/* .nav-bar {
+    display: flex;
+} */
+
 /* tablet */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
     /* teste */
     /* header {
         background-color: blue;
     } */
-    figure {
-        width: 10%;
+
+    /* MENU DO MOBILE */
+    .nav-bar {
+        padding: 1.5rem 4rem;
     }
-    .logo {
-        height: 6vh;
+    .nav-item {
+        display: none;
     }
-    header,
-    footer {
-        height: 8vh;
+    header {
+        height: 36vh;
     }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+    /* FIM DO MENU DO MOBILE */
 }
 
 /* mobile */
@@ -515,4 +567,35 @@ footer {
     /* header {
         background-color: red;
     } */
+
+    /* MENU DO MOBILE */
+    .nav-item {
+        display: none;
+    }
+    header {
+        height: 36vh;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+    /* FIM DO MENU DO MOBILE */
 }

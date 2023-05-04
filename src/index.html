@@ -18,41 +18,99 @@
     <body>
         <div class="container estilo-flex">
             <header class="estilo-flex">
-                <figure class="figure-logo">
-                    <img
-                        src="../media-page/logo-estilizada.png"
-                        alt=""
-                        class="logo"
-                    />
-                </figure>
-                <nav class="nav-superior estilo-flex">
-                    <ul class="lista-nav-superior estilo-flex">
-                        <li>
-                            <a class="ancora" href="#secao-servicos"
-                                >Serviços</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-localizacao"
-                                >Localização</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-promocao"
-                                >Promoções</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-perguntas"
-                                >Perguntas</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-contato"
-                                >Fale Conosco</a
-                            >
-                        </li>
-                    </ul>
+                <nav class="nav-bar" id="navegacao-superior">
+                    <figure class="figure-logo">
+                        <img
+                            src="../media-page/logo-estilizada.png"
+                            alt=""
+                            class="logo"
+                        />
+                    </figure>
+                    <div class="nav-list">
+                        <ul id="menu" class="lista-nav-superior">
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-servicos"
+                                    >Serviços</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-localizacao"
+                                    >Localização</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-promocao"
+                                    >Promoções</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-perguntas"
+                                    >Perguntas</a
+                                >
+                            </li>
+                            <li>
+                                <a class="ancora nav-item" href="#secao-contato"
+                                    >Fale Conosco</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()">
+                            <img
+                                class="icon"
+                                src="../media-page/hamburguer.png"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <ul>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-servicos"
+                                    >Serviços</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-localizacao"
+                                    >Localização</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-promocao"
+                                    >Promoções</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-perguntas"
+                                    >Perguntas</a
+                                >
+                            </li>
+                            <li>
+                                <a class="ancora nav-item" href="#secao-contato"
+                                    >Fale Conosco</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <main class="estilo-grid">

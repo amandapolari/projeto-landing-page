@@ -509,6 +509,19 @@ footer {
     display: flex;
 } */
 
+.alert,
+.alert-concluido {
+    text-align: center;
+}
+
+.alert {
+    color: #fa5d65;
+}
+
+.alert-concluido {
+    color: rgb(44, 232, 44);
+}
+
 /* tablet */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
     /* ------- TESTE -------- */

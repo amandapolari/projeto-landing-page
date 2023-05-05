@@ -130,6 +130,7 @@ h1,
     width: 15vh;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 h1,
@@ -255,19 +256,16 @@ h1 {
     font-size: 1.5em;
     text-align: center;
     align-items: flex-start;
-}
-
-.p-da-section-servicos {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     line-height: 1.5em;
 }
 
-.ul-da-section-servicos {
+/* .ul-da-section-servicos {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     line-height: 2em;
-}
+} */
 
 #botao-principal-servicos {
     grid-row: 3 / 4;
@@ -513,7 +511,7 @@ footer {
 
 /* tablet */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
-    /* teste */
+    /* ------- TESTE -------- */
     /* header {
         background-color: blue;
     } */
@@ -521,8 +519,9 @@ footer {
     /* header {
         height: 10vh;
     } */
+    /* -------------------- */
 
-    /* MENU DO MOBILE */
+    /* ----- MENU DO MOBILE ----- */
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -555,9 +554,317 @@ footer {
         display: block;
     }
     /* FIM DO MENU DO MOBILE */
+    /* -------------------------- */
+
+    /* ---- AJUDA NA CONFIG GERAL */
+    /* .estilo-flex,
+    .estilo-grid {
+        display: initial;
+    } */
+
+    /* header {
+        display: flex;
+    } */
+
+    /*  -------------------- */
+
+    /* header, footer {
+        height: 9vh;
+    } */
+
+    /* header,
+    footer {
+        height: 10vh;
+        background-color: #f2d7d8;
+        padding: 1.2vh;
+        justify-content: space-between;
+        text-align: center;
+        z-index: 1000;
+    } */
+
+    /* --- SECTION SERVIÇOS ----- */
+    #secao-servicos {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+        row-gap: 4vh;
+        column-gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    h1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        padding: 1vh;
+        font-size: 3vh;
+        width: 70%;
+        justify-self: center;
+    }
+    .subtitulo-section-servicos {
+        width: 60%;
+        border-bottom: 2px solid #fa5d65;
+        text-align: center;
+        margin: 0.5vh auto 1.5vh auto;
+    }
+    .subtitulo-section-servicos {
+        font-size: 3vh;
+    }
+    .article-da-section-servicos {
+        padding: 2vh;
+        height: 30vh;
+        grid-template: 8vh 1fr 1fr / 1fr;
+        place-self: center;
+        border-radius: 49px;
+        text-align: center;
+        justify-content: center;
+    }
+    #card-1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #card-2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    #card-3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    #card-4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    #botao-principal-servicos {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        justify-self: center;
+        align-self: start;
+        font-size: 1.5vh;
+        font-weight: bold;
+    }
+    /* ---------------------- */
+
+    /* --- SECTION LOCALIZAÇÃO ----- */
+    /* #section-localizacao {
+        justify-content: center;
+        align-items: center;
+    } */
+    .article-da-localizacao {
+        display: grid;
+        grid-template: 0.2fr 0.5fr auto auto/ 1fr;
+        margin: 0;
+        height: 100%;
+        gap: 0;
+        row-gap: 2vh;
+        justify-content: center;
+    }
+    #subtitulo-secao-loc {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        width: 70%;
+        font-size: 3vh;
+    }
+    #imagem-mapa {
+        height: 30vh;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+    }
+    .p-da-section-localizacao {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: center;
+        /* align-self: start; */
+        justify-self: center;
+        text-align: center;
+        width: 40vh;
+        font-size: 2.5vh;
+    }
+    .botao-da-secao-localizacao {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        align-self: start;
+        justify-self: center;
+    }
+    /* ---------------------- */
+
+    /* terceira seção: */
+    #secao-promocao {
+        /* display: grid; */
+        background-color: #f2f3f4;
+        font-size: 1.5vh;
+    }
+    .article-da-promocao {
+        display: grid;
+        grid-template: repeat(4, auto) / auto;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+    #subtitulo-secao-promo {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 100%;
+        padding-top: 3vh;
+        text-align: center;
+        align-self: end;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    .p-da-section-promo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        width: 60vh;
+        font-size: 3vh;
+        padding-top: 2vh;
+    }
+    .botao-da-secao-promo {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: start;
+        justify-self: center;
+        font-size: 1.5vh;
+    }
+    /* ----------- */
+
+    /* quarta seção */
+    #secao-perguntas {
+        display: grid;
+        grid-template: repeat(2, auto) / auto;
+        background-image: url(/media-page/notas-p.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #subtitulo-secao-perguntas {
+        text-align: center;
+        width: 70%;
+        margin: 0;
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    .article-da-perguntas {
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template: 1fr / 1fr;
+        align-items: center;
+        margin: 0 5vw;
+        height: 90%;
+        font-size: 1.8vh;
+    }
+    #imagem-secao-perguntas {
+        display: none;
+    }
+    .lista-definicao {
+        height: 15vh;
+        padding: 2.1vh;
+        width: 90%;
+        background: #f8f4f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .dt-das-perguntas {
+        font-size: 2.2vh;
+    }
+    .dd-da-section-perguntas {
+        padding: 1.2vh;
+        font-weight: bolder;
+    }
+    /* ----------- */
+
+    /* quinta seção */
+    #secao-contato {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        background-image: url(/media-page/escritorio-com-filtro-p.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+    .article-contato {
+        display: grid;
+        /* grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr; */
+        grid-template: repeat(6, auto) / 1fr;
+        align-items: center;
+        margin: 0;
+        /* height: 9%; */
+        gap: 1vh;
+        font-size: 2vh;
+    }
+    #subtitulo-secao-contato {
+        width: 70%;
+        align-self: start;
+        justify-content: center;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+    }
+    form {
+        grid-row: 1 / 6;
+        grid-column: 1 / 2;
+        border-radius: 1rem;
+        background-color: rgb(255, 255, 255);
+        justify-self: center;
+        /* align-items: center; */
+        width: 80%;
+        height: 70vh;
+        padding: 5vh;
+    }
+    input,
+    textarea {
+        background-color: transparent;
+        border-width: 0 0 0.1vh;
+        color: rgb(17, 17, 17);
+        outline: none;
+        width: 100%;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(17, 17, 17, 0.2);
+        --inputCurrentColor: #111111;
+        resize: none;
+    }
+    .inputs-contato {
+        height: 6vh;
+    }
+    #mensagem {
+        padding: 12vh 0 0 0;
+        height: 16vh;
+    }
+    #botao-enviar {
+        margin: 3vh 0;
+        align-self: center;
+        justify-self: center;
+    }
+    /* ----------- */
+
+    /* footer e nav inferior */
+    footer {
+        flex-direction: row;
+    }
+    .nav-inferior {
+        justify-content: flex-end;
+    }
+    .lista-nav-inferior {
+        justify-content: space-evenly;
+        height: 6vh;
+        width: 40%;
+        align-items: center;
+    }
+    .icones {
+        height: 4vh;
+    }
 }
 
-/* mobile */
+/* => RESPONSIVIDADE MOBILE <= */
 @media screen and (max-width: 480px) {
     /* teste */
     /* header {
@@ -568,10 +875,6 @@ footer {
     .nav-item {
         display: none;
     }
-    header {
-        height: 36vh;
-    }
-
     .mobile-menu-icon {
         display: block;
     }
@@ -594,4 +897,286 @@ footer {
         display: block;
     }
     /* FIM DO MENU DO MOBILE */
+    /* -------------------------- */
+
+    /* --- SECTION SERVIÇOS ----- */
+    #secao-servicos {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+        row-gap: 4vh;
+        column-gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    h1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        padding: 1vh;
+        font-size: 2.5vh;
+        width: 70%;
+        justify-self: center;
+    }
+    .subtitulo-section-servicos {
+        width: 60%;
+        border-bottom: 2px solid #fa5d65;
+        text-align: center;
+        margin: 0.5vh auto 1.5vh auto;
+    }
+    .subtitulo-section-servicos {
+        font-size: 2vh;
+    }
+    .p-da-section-servicos {
+        font-size: 0.8em;
+    }
+    .article-da-section-servicos {
+        padding: 2vh;
+        height: 30vh;
+        grid-template: 8vh 1fr 1fr / 1fr;
+        place-self: center;
+        border-radius: 49px;
+        text-align: center;
+        justify-content: center;
+    }
+    #card-1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #card-2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    #card-3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    #card-4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    #botao-principal-servicos {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        justify-self: center;
+        align-self: start;
+        font-size: 1.5vh;
+        font-weight: bold;
+    }
+    /* ---------------------- */
+
+    /* --- SECTION LOCALIZAÇÃO ----- */
+    .article-da-localizacao {
+        display: grid;
+        grid-template: 0.2fr 0.5fr auto auto/ 1fr;
+        margin: 0;
+        height: 100%;
+        gap: 0;
+        row-gap: 2vh;
+        justify-content: center;
+    }
+    #subtitulo-secao-loc {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        width: 70%;
+        font-size: 2vh;
+    }
+    #imagem-mapa {
+        height: 30vh;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        /* align-self: start; */
+        /* align-self: center; */
+    }
+    .p-da-section-localizacao {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: center;
+        /* align-self: start; */
+        justify-self: center;
+        text-align: center;
+        width: 40vh;
+        font-size: 2.5vh;
+    }
+    .botao-da-secao-localizacao {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        align-self: start;
+        justify-self: center;
+    }
+    /* ---------------------- */
+
+    /* terceira seção: */
+    #secao-promocao {
+        background-color: #f2f3f4;
+        font-size: 1.5vh;
+    }
+    .article-da-promocao {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        margin: 0;
+        height: 100%;
+        gap: 2vh;
+    }
+    #subtitulo-secao-promo {
+        font-size: 3vh;
+        text-align: center;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 70%;
+        padding-top: 3vh;
+        align-self: end;
+        justify-content: center;
+    }
+    .p-da-section-promo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        width: 60vw;
+        font-size: 2.5vh;
+        padding-top: 2vh;
+    }
+    .botao-da-secao-promo {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: start;
+        justify-self: center;
+        font-size: 1.5vh;
+    }
+    /* ----------- */
+
+    /* quarta seção */
+    #secao-perguntas {
+        display: grid;
+        grid-template: 0.6fr auto auto auto auto / auto;
+        background-image: url(/media-page/notas-p.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #subtitulo-secao-perguntas {
+        text-align: center;
+        width: 70%;
+        margin: 0;
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    .article-da-perguntas {
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template: 1fr / 1fr;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 0 5vw;
+        height: 95%;
+        font-size: 1.8vh;
+        gap: 2vh;
+    }
+    #imagem-secao-perguntas {
+        display: none;
+    }
+    .lista-definicao {
+        height: 18vh;
+        padding: 1.8vh;
+        width: 95%;
+        background: #f8f4f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .dt-das-perguntas {
+        font-size: 2vh;
+        font-weight: bolder;
+    }
+    .dd-da-section-perguntas {
+        padding: 1.2vh;
+    }
+    /* ----------- */
+
+    /* quinta seção */
+    #secao-contato {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        background-image: url(/media-page/escritorio-com-filtro-p.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+    .article-contato {
+        display: grid;
+        /* grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr; */
+        grid-template: repeat(6, auto) / 1fr;
+        align-items: center;
+        margin: 0;
+        gap: 1vh;
+        font-size: 2vh;
+    }
+    #subtitulo-secao-contato {
+        width: 70%;
+        align-self: start;
+        justify-content: center;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+    }
+    form {
+        grid-row: 1 / 6;
+        grid-column: 1 / 2;
+        border-radius: 1rem;
+        background-color: rgb(255, 255, 255);
+        justify-self: center;
+        /* align-items: center; */
+        width: 80%;
+        height: 70vh;
+        padding: 5vh;
+    }
+    input,
+    textarea {
+        background-color: transparent;
+        border-width: 0 0 0.1vh;
+        color: rgb(17, 17, 17);
+        outline: none;
+        width: 100%;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(17, 17, 17, 0.2);
+        --inputCurrentColor: #111111;
+        resize: none;
+    }
+    .inputs-contato {
+        height: 6vh;
+    }
+    #mensagem {
+        padding: 12vh 0 0 0;
+        height: 16vh;
+    }
+    #botao-enviar {
+        margin: 3vh 0;
+        align-self: center;
+        justify-self: center;
+    }
+    /* ----------- */
+
+    /* footer e nav inferior */
+    footer {
+        flex-direction: row;
+    }
+    .nav-inferior {
+        justify-content: flex-end;
+    }
+    .lista-nav-inferior {
+        justify-content: space-evenly;
+        height: 6vh;
+        width: 50%;
+        align-items: center;
+    }
+    .icones {
+        height: 4vh;
+    }
 }

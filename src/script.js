@@ -14,17 +14,3 @@ function menuShow() {
         menuMobile.classList.add('open');
     }
 }
-
-// Lógica do formulário:
-// Limpar formulário:
-const btn = document.getElementById('botao-enviar');
-btn.addEventListener('click', (event) => {
-    event.preventDefault();
-    const inputs = document.querySelectorAll('.inputs-contato');
-    inputs.forEach((input) => {
-        input.value = '';
-    });
-});
-// ------------------
-
-//

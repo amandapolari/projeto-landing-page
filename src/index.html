@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="container estilo-flex">
-            <header class="estilo-flex">
+            <header id="header" class="estilo-flex">
                 <nav class="nav-bar" id="navegacao-superior">
                     <figure class="figure-logo">
                         <img
@@ -64,17 +64,7 @@
                         </ul>
                     </div>
 
-                    <div class="mobile-menu-icon">
-                        <button onclick="menuShow()">
-                            <img
-                                class="icon"
-                                src="../media-page/hamburguer.png"
-                                alt=""
-                            />
-                        </button>
-                    </div>
-
-                    <div class="mobile-menu">
+                    <div id="menu-para-mobile" class="mobile-menu">
                         <ul>
                             <li>
                                 <a
@@ -110,6 +100,15 @@
                                 >
                             </li>
                         </ul>
+                    </div>
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()">
+                            <img
+                                class="icon"
+                                src="../media-page/hamburguer.png"
+                                alt=""
+                            />
+                        </button>
                     </div>
                 </nav>
             </header>

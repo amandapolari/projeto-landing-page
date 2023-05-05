@@ -13,67 +13,136 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
             rel="stylesheet"
         />
+        <script src="./script.js" defer></script>
     </head>
     <body>
-        <div class="container">
-            <header>
-                <figure class="figure-logo">
-                    <img
-                        src="../media-page/logo-estilizada.png"
-                        alt=""
-                        class="logo"
-                    />
-                </figure>
-                <nav class="nav-superior">
-                    <ul class="lista-nav-superior">
-                        <li>
-                            <a class="ancora" href="#secao-servicos"
-                                >Serviços</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-localizacao"
-                                >Localização</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-promocao"
-                                >Promoções</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-perguntas"
-                                >Perguntas</a
-                            >
-                        </li>
-                        <li>
-                            <a class="ancora" href="#secao-contato"
-                                >Fale Conosco</a
-                            >
-                        </li>
-                    </ul>
+        <div class="container estilo-flex">
+            <header id="header" class="estilo-flex">
+                <nav class="nav-bar" id="navegacao-superior">
+                    <figure class="figure-logo">
+                        <img
+                            src="../media-page/logo-estilizada.png"
+                            alt=""
+                            class="logo"
+                        />
+                    </figure>
+                    <div class="nav-list">
+                        <ul id="menu" class="lista-nav-superior">
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-servicos"
+                                    >Serviços</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-localizacao"
+                                    >Localização</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-promocao"
+                                    >Promoções</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-perguntas"
+                                    >Perguntas</a
+                                >
+                            </li>
+                            <li>
+                                <a class="ancora nav-item" href="#secao-contato"
+                                    >Fale Conosco</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="menu-para-mobile" class="mobile-menu">
+                        <ul>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-servicos"
+                                    >Serviços</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-localizacao"
+                                    >Localização</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-promocao"
+                                    >Promoções</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="ancora nav-item"
+                                    href="#secao-perguntas"
+                                    >Perguntas</a
+                                >
+                            </li>
+                            <li>
+                                <a class="ancora nav-item" href="#secao-contato"
+                                    >Fale Conosco</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()">
+                            <img
+                                class="icon"
+                                src="../media-page/hamburguer.png"
+                                alt=""
+                            />
+                        </button>
+                    </div>
                 </nav>
             </header>
-            <main>
-                <section class="secao" id="secao-servicos">
-                    <h1>NOSSO CARRO, SUA CHANCE!</h1>
-                    <article class="article-da-section-servicos">
+            <main class="estilo-grid">
+                <section class="secao estilo-grid" id="secao-servicos">
+                    <h1 id="titulo-principal" class="estilo-grid">
+                        NOSSO CARRO, SUA CHANCE!
+                    </h1>
+                    <article
+                        id="card-1"
+                        class="article-da-section-servicos estilo-grid"
+                    >
                         <h2 class="subtitulo-section-servicos">Acessível</h2>
-                        <p class="p-da-section-servicos">
+                        <p class="p-da-section-servicos estilo-grid">
                             A 4Cars oferece carros para serem alugados por
                             motoristas a um custo razoável.
                         </p>
                     </article>
-                    <article class="article-da-section-servicos">
+                    <article
+                        id="card-2"
+                        class="article-da-section-servicos estilo-grid"
+                    >
                         <h2 class="subtitulo-section-servicos">Moderno</h2>
-                        <p class="p-da-section-servicos">
+                        <p class="p-da-section-servicos estilo-grid">
                             A 4Cars é uma plataforma 100% digital,
                             possibilitando o aluguel de carros sem sair de casa!
                         </p>
                     </article>
-                    <article class="article-da-section-servicos">
+                    <article
+                        id="card-3"
+                        class="article-da-section-servicos estilo-grid"
+                    >
                         <h2 class="subtitulo-section-servicos">Prático</h2>
-                        <p class="p-da-section-servicos">
+                        <p class="p-da-section-servicos estilo-grid">
                             Possuimos amplo modelo de pagamento:
                             <br />
                             Crédito
@@ -82,25 +151,19 @@
                             <br />
                             Pix
                         </p>
-                        <!-- <ul class="ul-da-section-servicos">
-                            <li>Crédito</li>
-                            <li>Débito</li>
-                            <li>Pix</li>
-                        </ul> -->
                     </article>
-                    <article class="article-da-section-servicos">
+                    <article
+                        id="card-4"
+                        class="article-da-section-servicos estilo-grid"
+                    >
                         <h2 class="subtitulo-section-servicos">Diverso</h2>
-                        <p class="p-da-section-servicos">
+                        <p class="p-da-section-servicos estilo-grid">
                             Possuimos duas linhas de produto:
                             <br />
                             Carros Populares
                             <br />
                             Carros de Luxo
                         </p>
-                        <!-- <ul class="ul-da-section-servicos">
-                            <li>Carros Populares</li>
-                            <li>Carros de Luxo</li>
-                        </ul> -->
                     </article>
                     <button
                         class="botao botao-da-secao-servicos"
@@ -112,8 +175,11 @@
                     </button>
                 </section>
                 <section class="secao" id="secao-localizacao">
-                    <article class="article-da-localizacao">
-                        <h2 class="subtitulo" id="subtitulo-secao-loc">
+                    <article class="article-da-localizacao estilo-grid">
+                        <h2
+                            class="subtitulo estilo-grid"
+                            id="subtitulo-secao-loc"
+                        >
                             ESTAMOS EM TODO BRASIL!
                         </h2>
                         <img
@@ -134,15 +200,18 @@
                     </article>
                 </section>
                 <section class="secao" id="secao-promocao">
-                    <article class="article-da-promocao">
-                        <h2 class="subtitulo" id="subtitulo-secao-promo">
+                    <article class="article-da-promocao estilo-grid">
+                        <h2
+                            class="subtitulo estilo-grid"
+                            id="subtitulo-secao-promo"
+                        >
                             COMPARTILHE E GANHE!
                         </h2>
                         <p class="p-da-section-promo">
                             Indique o serviço para um amigo e ganhe desconto de
                             10%!
                         </p>
-                        <button class="botao botao-da-secao-promo">
+                        <button class="botao botao-da-secao-promo estilo-grid">
                             <a class="ancora-dos-botoes" href="#secao-contato"
                                 >Fale Conosco</a
                             >
@@ -155,21 +224,20 @@
                         />
                     </article>
                 </section>
-                <section class="secao" id="secao-perguntas">
+                <section class="secao estilo-grid" id="secao-perguntas">
                     <img
                         src="../media-page/notas.png"
                         alt=""
+                        class="estilo-grid"
                         id="imagem-secao-perguntas"
                     />
-                    <h2 class="subtitulo" id="subtitulo-secao-perguntas">
+                    <h2
+                        class="subtitulo estilo-grid"
+                        id="subtitulo-secao-perguntas"
+                    >
                         FAQ
                     </h2>
-                    <article class="article-da-perguntas">
-                        <!-- <img
-                            src="../media-page/notas.jpg"
-                            alt=""
-                            id="imagem-secao-perguntas"
-                        /> -->
+                    <article class="article-da-perguntas estilo-grid">
                         <dl class="lista-definicao" id="dl-primeira-pergunta">
                             <dt
                                 class="dt-das-perguntas"
@@ -236,18 +304,12 @@
                     </article>
                 </section>
                 <section class="secao" id="secao-contato">
-                    <article class="article-contato">
-                        <!-- <h2 class="subtitulo" id="subtitulo-secao-contato">
-                            FALE CONOSCO
-                        </h2> -->
-                        <!-- <img
-                            src="../media-page/digitacao.png"
-                            alt=""
-                            class="imagem"
-                            id="imagem-secao-contato"
-                        /> -->
-                        <form action="#">
-                            <h2 class="subtitulo" id="subtitulo-secao-contato">
+                    <article class="article-contato estilo-grid">
+                        <form class="estilo-grid" action="#">
+                            <h2
+                                class="subtitulo estilo-grid"
+                                id="subtitulo-secao-contato"
+                            >
                                 FALE CONOSCO
                             </h2>
                             <!-- <label for="nome">Nome</label> -->
@@ -277,7 +339,7 @@
                     </article>
                 </section>
             </main>
-            <footer>
+            <footer class="estilo-flex">
                 <figure class="figure-logo">
                     <img
                         src="../media-page/logo-estilizada.png"
@@ -285,8 +347,8 @@
                         class="logo"
                     />
                 </figure>
-                <nav class="nav-inferior">
-                    <ul class="lista-nav-inferior">
+                <nav class="nav-inferior estilo-flex">
+                    <ul class="lista-nav-inferior estilo-flex">
                         <li>
                             <a href="https://www.instagram.com" target="_blank"
                                 ><img

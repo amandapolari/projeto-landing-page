@@ -2,6 +2,8 @@
 let menuMobile = document.querySelector('.mobile-menu');
 const imgHamb = document.querySelector('.hamb');
 const imgClose = document.querySelector('.x');
+const li = document.querySelectorAll('#menu-para-mobile li a');
+
 function menuShow() {
     imgHamb.classList.remove('active');
     imgHamb.classList.add('hidden');
@@ -25,9 +27,6 @@ function menuShow() {
         menuMobile.classList.add('open');
     }
 }
-
-const li = document.querySelectorAll('#menu-para-mobile li a');
-console.log(li);
 
 li.forEach((item) => {
     item.addEventListener('click', () => {
@@ -71,3 +70,42 @@ const verificaInputsVazios = (event) => {
 };
 
 btn.addEventListener('click', verificaInputsVazios);
+
+// Lógica da posição correta:
+// DESKTOP
+const nav = document.querySelectorAll('#navegacao-superior');
+
+const scrollTop = (event) => {
+    event.preventDefault();
+    const href = event.target.getAttribute('href');
+    const distanciaTop = document.querySelector(href).offsetTop;
+    const alturaHeader = +window
+        .getComputedStyle(document.querySelector('header'))
+        .height.replace('px', '');
+    window.scrollTo({
+        top: distanciaTop - alturaHeader,
+    });
+};
+
+nav.forEach((elemento) => {
+    elemento.addEventListener('click', scrollTop);
+});
+
+// MOBILE
+const listaMenuMobile = document.querySelectorAll('#menu-para-mobile');
+
+const scrollTopMobile = (event) => {
+    event.preventDefault();
+    const href = event.target.getAttribute('href');
+    const distanciaTop = document.querySelector(href).offsetTop;
+    const alturaHeader = +window
+        .getComputedStyle(document.querySelector('header'))
+        .height.replace('px', '');
+    window.scrollTo({
+        top: distanciaTop - alturaHeader,
+    });
+};
+
+listaMenuMobile.forEach((elemento) => {
+    elemento.addEventListener('click', scrollTopMobile);
+});

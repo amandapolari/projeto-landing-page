@@ -109,3 +109,12 @@ const scrollTopMobile = (event) => {
 listaMenuMobile.forEach((elemento) => {
     elemento.addEventListener('click', scrollTopMobile);
 });
+
+
+// RETORNAR AO TOPO
+// Botão Return
+const botaoRetornar = document.getElementById("btn-return");
+
+botaoRetornar.addEventListener("click", () =>
+  window.scrollTo({ top: 0, behavior: "smooth" })
+);

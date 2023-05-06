@@ -484,6 +484,23 @@ footer {
     height: 4vh;
 }
 
+/* botão return */
+#btn-return {
+    background-color: #ea9fa176;
+    border-radius: 100%;
+    padding: 2vw;
+    position: fixed;
+    bottom: 12vh;
+    right: 3vw;
+    z-index: 1002;
+    border: none;
+}
+
+#img-return {
+    height: 2vh;
+}
+/* ---- */
+
 /* RESPONSIVIDADE */
 /* Configurações para menu mobile */
 .mobile-menu-icon {
@@ -528,10 +545,23 @@ footer {
     }
     .mobile-menu ul {
         display: flex;
+        position: fixed;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
+        background-color: #f8f4f3;
+        width: 100%;
+        z-index: 1001;
     }
+
+    .active {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
@@ -810,6 +840,23 @@ footer {
     .icones {
         height: 4vh;
     }
+    /* botão return */
+    #btn-return {
+        background-color: #ea9fa193;
+        border-radius: 100%;
+        padding: 2vw;
+        /* background: transparent 2%; */
+        position: fixed;
+        bottom: 15vh;
+        right: 5vw;
+        z-index: 1002;
+        border: none;
+    }
+
+    #img-return {
+        height: 5vh;
+    }
+    /* ---- */
 }
 
 /* - */
@@ -1120,11 +1167,29 @@ footer {
     }
     .lista-nav-inferior {
         justify-content: space-evenly;
-        height: 6vh;
+        height: 3vh;
         width: 50%;
         align-items: center;
     }
     .icones {
-        height: 4vh;
+        height: 3vh;
     }
+
+    /* botão return */
+    #btn-return {
+        background-color: #ea9fa193;
+        border-radius: 100%;
+        padding: 2vw;
+        /* background: transparent 2%; */
+        position: fixed;
+        bottom: 15vh;
+        right: 5vw;
+        z-index: 1002;
+        border: none;
+    }
+
+    #img-return {
+        height: 5vh;
+    }
+    /* ---- */
 }

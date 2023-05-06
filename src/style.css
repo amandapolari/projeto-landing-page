@@ -208,7 +208,7 @@ a:hover {
 }
 /* ---------------------------------------- */
 
-/* organização das seções */
+/* ORGANIZAÇÃO DAS SECTIONS */
 
 /* configurações em comum das sections: */
 #secao-localizacao,
@@ -217,7 +217,7 @@ a:hover {
 }
 /* ---------- */
 
-/* primeira seção: */
+/* PRIMEIRA SECTION - SERVIÇOS */
 #secao-servicos {
     grid-template: 0.15fr 0.8fr 0.2fr / repeat(4, 1fr);
     gap: 1vh;
@@ -241,7 +241,6 @@ h1 {
     padding: 1.5vh;
     height: 45vh;
     width: 80%;
-    /* padding: 2vh; */
     grid-template: 8vh 1fr 1fr / 1fr;
     place-self: center;
     border-radius: 49px;
@@ -264,7 +263,7 @@ h1 {
 }
 /* ----------- */
 
-/* segunda seção: */
+/* SEGUNDA SECTION - LOCALIZAÇÃO */
 .article-da-localizacao {
     grid-template: 0.3fr 1fr 1fr/ 1fr 1fr;
     margin: 0 16vh;
@@ -304,7 +303,7 @@ h1 {
 }
 /* ----------- */
 
-/* terceira seção: */
+/* TERCEIRA SECTION - PROMOÇÕES */
 #secao-promocao {
     background-color: #f2f3f4;
     font-size: 1.5vh;
@@ -342,7 +341,6 @@ h1 {
     grid-row: 3 / 4;
     align-self: start;
     justify-self: center;
-    /* font-size: 1.5vh; */
 }
 
 #amigas {
@@ -354,7 +352,7 @@ h1 {
 }
 /* ----------- */
 
-/* quarta seção */
+/* QUARTA SECTION - PERGUNTAS */
 #secao-perguntas {
     grid-template: 1fr 1fr / 0.1fr 1.5fr;
 }
@@ -404,7 +402,7 @@ h1 {
 }
 /* ----------- */
 
-/* quinta seção */
+/* QUINTA SECTION - CONTATO | FORM */
 #secao-contato {
     background-image: url(/media-page/escritorio-com-filtro.png);
     background-repeat: no-repeat;
@@ -495,9 +493,6 @@ footer {
 .mobile-menu {
     display: none;
 }
-/* .nav-bar {
-    display: flex;
-} */
 
 .alert,
 .alert-concluido {
@@ -512,18 +507,8 @@ footer {
     color: rgb(44, 232, 44);
 }
 
-/* tablet */
+/* => RESPONSIVIDADE TABLET <= */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
-    /* ------- TESTE -------- */
-    /* header {
-        background-color: blue;
-    } */
-
-    /* header {
-        height: 10vh;
-    } */
-    /* -------------------- */
-
     /* ----- MENU DO MOBILE ----- */
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -531,9 +516,6 @@ footer {
     .nav-item {
         display: none;
     }
-    /* header {
-        height: 36vh;
-    } */
 
     .mobile-menu-icon {
         display: block;
@@ -556,34 +538,7 @@ footer {
     .open {
         display: block;
     }
-    /* FIM DO MENU DO MOBILE */
     /* -------------------------- */
-
-    /* ---- AJUDA NA CONFIG GERAL */
-    /* .estilo-flex,
-    .estilo-grid {
-        display: initial;
-    } */
-
-    /* header {
-        display: flex;
-    } */
-
-    /*  -------------------- */
-
-    /* header, footer {
-        height: 9vh;
-    } */
-
-    /* header,
-    footer {
-        height: 10vh;
-        background-color: #f2d7d8;
-        padding: 1.2vh;
-        justify-content: space-between;
-        text-align: center;
-        z-index: 1000;
-    } */
 
     /* --- SECTION SERVIÇOS ----- */
     #secao-servicos {
@@ -690,7 +645,7 @@ footer {
     }
     /* ---------------------- */
 
-    /* terceira seção: */
+    /* --- SECTION PROMOÇÕES ----- */
     #secao-promocao {
         background-color: #f2f3f4;
         font-size: 1.5vh;
@@ -731,7 +686,7 @@ footer {
     }
     /* ----------- */
 
-    /* quarta seção */
+    /* --- SECTION PERGUNTAS ----- */
     #secao-perguntas {
         display: grid;
         grid-template: repeat(2, auto) / auto;
@@ -777,7 +732,7 @@ footer {
     }
     /* ----------- */
 
-    /* quinta seção */
+    /* --- SECTION CONTATO | FORM ----- */
     #secao-contato {
         display: grid;
         grid-template: 1fr / 1fr;
@@ -858,11 +813,6 @@ footer {
 
 /* => RESPONSIVIDADE MOBILE <= */
 @media screen and (max-width: 480px) {
-    /* teste */
-    /* header {
-        background-color: red;
-    } */
-
     /* MENU DO MOBILE */
     .nav-item {
         display: none;
@@ -888,7 +838,6 @@ footer {
     .open {
         display: block;
     }
-    /* FIM DO MENU DO MOBILE */
     /* -------------------------- */
 
     /* --- SECTION SERVIÇOS ----- */
@@ -999,7 +948,7 @@ footer {
     }
     /* ---------------------- */
 
-    /* terceira seção: */
+   /* --- SECTION PROMOÇÕES ----- */
     #secao-promocao {
         background-color: #f2f3f4;
         font-size: 1.5vh;
@@ -1039,7 +988,7 @@ footer {
     }
     /* ----------- */
 
-    /* quarta seção */
+    /* --- SECTION PERGUNTAS ----- */
     #secao-perguntas {
         display: grid;
         grid-template: 0.6fr auto auto auto auto / auto;
@@ -1086,7 +1035,7 @@ footer {
     }
     /* ----------- */
 
-    /* quinta seção */
+    /* --- SECTION CONTATO | FORM ----- */
     #secao-contato {
         display: grid;
         grid-template: 1fr / 1fr;

@@ -1,8 +1,8 @@
 // Lógica do menu mobile:
 let menuMobile = document.querySelector('.mobile-menu');
+const imgHamb = document.querySelector('.hamb');
+const imgClose = document.querySelector('.x');
 function menuShow() {
-    const imgHamb = document.querySelector('.hamb');
-    const imgClose = document.querySelector('.x');
     imgHamb.classList.remove('active');
     imgHamb.classList.add('hidden');
     imgClose.classList.remove('hidden');
@@ -32,6 +32,10 @@ console.log(li);
 li.forEach((item) => {
     item.addEventListener('click', () => {
         menuMobile.classList.remove('open');
+        imgHamb.classList.remove('hidden');
+        imgHamb.classList.add('active');
+        imgClose.classList.remove('active');
+        imgClose.classList.add('hidden');
     });
 });
 

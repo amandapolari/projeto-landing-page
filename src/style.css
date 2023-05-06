@@ -507,6 +507,7 @@ footer {
     color: rgb(44, 232, 44);
 }
 
+/* - */
 /* => RESPONSIVIDADE TABLET <= */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
     /* ----- MENU DO MOBILE ----- */
@@ -811,6 +812,7 @@ footer {
     }
 }
 
+/* - */
 /* => RESPONSIVIDADE MOBILE <= */
 @media screen and (max-width: 480px) {
     /* MENU DO MOBILE */
@@ -827,10 +829,23 @@ footer {
     }
     .mobile-menu ul {
         display: flex;
+        position: fixed;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
+        background-color: #f8f4f3;
+        width: 100%;
+        z-index: 1001;
     }
+
+    .active {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
@@ -948,7 +963,7 @@ footer {
     }
     /* ---------------------- */
 
-   /* --- SECTION PROMOÇÕES ----- */
+    /* --- SECTION PROMOÇÕES ----- */
     #secao-promocao {
         background-color: #f2f3f4;
         font-size: 1.5vh;

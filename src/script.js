@@ -1,8 +1,19 @@
 // Lógica do menu mobile:
+let menuMobile = document.querySelector('.mobile-menu');
 function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
+    const imgHamb = document.querySelector('.hamb');
+    const imgClose = document.querySelector('.x');
+    imgHamb.classList.remove('active');
+    imgHamb.classList.add('hidden');
+    imgClose.classList.remove('hidden');
+    imgClose.classList.add('active');
+
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
+        imgHamb.classList.remove('hidden');
+        imgHamb.classList.add('active');
+        imgClose.classList.remove('active');
+        imgClose.classList.add('hidden');
     } else {
         // Lógica para colocar o meu conteúdo logo em seguida do header:
         const novoElemento = document.createElement('div');
@@ -14,6 +25,15 @@ function menuShow() {
         menuMobile.classList.add('open');
     }
 }
+
+const li = document.querySelectorAll('#menu-para-mobile li a');
+console.log(li);
+
+li.forEach((item) => {
+    item.addEventListener('click', () => {
+        menuMobile.classList.remove('open');
+    });
+});
 
 // Lógica para o formulário:
 const inputsForm = document.querySelectorAll('.campo-formulario');

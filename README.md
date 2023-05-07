@@ -23,12 +23,6 @@
 * [1. Resumo do projeto](#1-resumo-do-projeto)
 * [2. Desenho da interface do usuário](#2-desenho-da-interface-do-usuário)
 * [3. Paleta, padrão e cores](#3-paleta-padrão-e-cores)
-<!-- * [2. Instalações](#2-instalações)
-* [3. Iniciando](#3-iniciando)
-* [4. Como testar](#4-como-testar)
-* [5. Tecnologias utilizadas](#5-tecnologias-utilizadas)
-* [6. Processo de desenvolvimento](#6-processo-de-desenvolvimento)
-* [7. Veja em produção](#7-veja-em-produção) -->
 
 ***
 
@@ -81,14 +75,5 @@ Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você p
 `#EA9FA2`
 
 `#FA5D65`
-
-### Definição de cores e tamanhos:
-
-1. Os títulos e textos terão fonte **Open Sans;**
-2. Os títulos serão 2 vezes maiores que os parágrafos;
-3. Os textos em parágrafos terão a cor preta;
-4. Todos os botões terão cor rosa, com texto preto em fonte 1x maior que a utilizada nos parágrafos;
-5. As seções terão fundo rosa ou branco, algumas com imagens de background, título preto, e os labels dos inputs serão pretos e brancos, respectivamente;
-6. O rodapé terá a rosa escuro.
 
 ***

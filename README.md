@@ -64,10 +64,6 @@ Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você p
 #### 2.2.3 Modelo para iPhone 8
 ![wireframe-2](./media-readme/iphone-8.png)
 
-#### 2.2.4 Modelo para iPhone SE
-![wireframe-2](./media-readme/iphone-se.png)
-
-
 ***
 
 ## 3. Paleta, padrão e cores

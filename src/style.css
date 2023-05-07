@@ -488,16 +488,16 @@ footer {
 #btn-return {
     background-color: #ea9fa176;
     border-radius: 100%;
-    padding: 2vw;
+    padding: 1.3vw;
     position: fixed;
     bottom: 12vh;
-    right: 3vw;
+    right: 1vw;
     z-index: 1002;
     border: none;
 }
 
 #img-return {
-    height: 2vh;
+    height: 1.5vh;
 }
 /* ---- */
 
@@ -609,6 +609,11 @@ footer {
         text-align: center;
         justify-content: center;
     }
+    
+    .p-da-section-servicos {
+        font-size: 1.3em;
+    }
+
     #card-1 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -630,7 +635,6 @@ footer {
         grid-column: 1 / 3;
         justify-self: center;
         align-self: start;
-        font-size: 1.5vh;
     }
     /* ---------------------- */
 
@@ -759,7 +763,7 @@ footer {
     }
     .dd-da-section-perguntas {
         padding: 1.2vh;
-        font-weight: bolder;
+        /* font-weight: bolder; */
     }
     /* ----------- */
 
@@ -809,6 +813,7 @@ footer {
         border-bottom-color: rgba(17, 17, 17, 0.2);
         --inputCurrentColor: #111111;
         resize: none;
+        font-size: 2vh;
     }
     .inputs-contato {
         height: 6vh;
@@ -842,19 +847,18 @@ footer {
     }
     /* botão return */
     #btn-return {
-        background-color: #ea9fa193;
+        background-color: #ea9fa16b;
         border-radius: 100%;
         padding: 2vw;
-        /* background: transparent 2%; */
         position: fixed;
-        bottom: 15vh;
-        right: 5vw;
+        bottom: 11vh;
+        right: 3vw;
         z-index: 1002;
         border: none;
     }
 
     #img-return {
-        height: 5vh;
+        height: 2.5vh;
     }
     /* ---- */
 }
@@ -937,7 +941,7 @@ footer {
     .article-da-section-servicos {
         padding: 2vh;
         height: 30vh;
-        grid-template: 8vh 1fr 1fr / 1fr;
+        grid-template: 5.5vh 1fr 1fr / 1fr;
         place-self: center;
         border-radius: 49px;
         text-align: center;
@@ -1143,6 +1147,7 @@ footer {
         border-bottom-color: rgba(17, 17, 17, 0.2);
         --inputCurrentColor: #111111;
         resize: none;
+        font-size: 2vh;
     }
     .inputs-contato {
         height: 6vh;
@@ -1177,19 +1182,18 @@ footer {
 
     /* botão return */
     #btn-return {
-        background-color: #ea9fa193;
+        background-color: #ea9fa158;
         border-radius: 100%;
         padding: 2vw;
-        /* background: transparent 2%; */
         position: fixed;
-        bottom: 15vh;
-        right: 5vw;
+        bottom: 12vh;
+        right: 3vw;
         z-index: 1002;
         border: none;
     }
 
     #img-return {
-        height: 5vh;
+        height: 4vh;
     }
     /* ---- */
 }

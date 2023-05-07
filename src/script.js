@@ -46,16 +46,13 @@ let msgAlerta;
 
 const verificaInputsVazios = (event) => {
     event.preventDefault();
-    console.log('O click está funcionando');
     if (nome.value == '' || email.value == '' || mensagem.value == '') {
-        // console.log('Algum campo está vazio');
         msgAlerta = "<p class='alert'>Por favor, preencha todos os campos</p>";
         document.getElementById('msgAlerta').innerHTML = msgAlerta;
         setTimeout(() => {
             document.getElementById('msgAlerta').innerHTML = '';
         }, 3200);
     } else {
-        // console.log('Todos os campos prenchidos');
         msgAlerta = `<p class='alert-concluido'>Muito obrigada pela confiança! Entraremos em contato através do e-mail ${email.value}</p>`;
         document.getElementById('msgAlerta').innerHTML = msgAlerta;
         setTimeout(() => {
@@ -101,6 +98,23 @@ const scrollTopMobile = (event) => {
 };
 listaMenuMobile.forEach((elemento) => {
     elemento.addEventListener('click', scrollTopMobile);
+});
+
+// DIRECIONAMENTO PARA SEÇÃO CONTATO COM A ALTURA CORRETA
+const btnsParaContato = document.querySelectorAll('.ancora-dos-botoes');
+const direcionarLink = (event) => {
+    event.preventDefault();
+    const href = event.target.getAttribute('href');
+    const distanciaTop = document.querySelector(href).offsetTop;
+    const alturaHeader = +window
+        .getComputedStyle(document.querySelector('header'))
+        .height.replace('px', '');
+    window.scrollTo({
+        top: distanciaTop - alturaHeader,
+    });
+};
+btnsParaContato.forEach((elemento) => {
+    elemento.addEventListener('click', direcionarLink);
 });
 
 // FUNÇÕES QUE RETORNAM AO TOPO -> ÍCONE SUPERIOR E BTN

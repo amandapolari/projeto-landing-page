@@ -6,13 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>4Cars</title>
         <link rel="stylesheet" href="./style.css" />
-        <!-- FONTES IMPORTADAS: -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-            rel="stylesheet"
-        />
         <script src="./script.js" defer></script>
     </head>
     <body>
@@ -22,8 +15,8 @@
                     <figure class="figure-logo">
                         <img
                             src="../media-page/logo-estilizada.png"
-                            alt=""
-                            class="logo"
+                            alt="logo do site imagem de carro e o nome 4Cars"
+                            class="logo logo-superior"
                         />
                     </figure>
                     <div class="nav-list">
@@ -104,9 +97,14 @@
                     <div class="mobile-menu-icon">
                         <button onclick="menuShow()">
                             <img
-                                class="icon"
+                                class="icon active hamb"
                                 src="../media-page/hamburguer.png"
-                                alt=""
+                                alt="ícone de menu"
+                            />
+                            <img
+                                class="icon hidden x"
+                                src="../media-page/x.png"
+                                alt="ícone de menu"
                             />
                         </button>
                     </div>
@@ -184,7 +182,7 @@
                         </h2>
                         <img
                             src="../media-page/mapa.png"
-                            alt="mapa"
+                            alt="mapa do Brasil"
                             class="imagem"
                             id="imagem-mapa"
                         />
@@ -218,16 +216,16 @@
                         </button>
                         <img
                             src="../media-page/amigas.png"
-                            alt=""
+                            alt="duas amigas sorrindo e olhando o celular"
                             class="imagem imagens-secao-promo"
-                            id="carro-amigos"
+                            id="amigas"
                         />
                     </article>
                 </section>
                 <section class="secao estilo-grid" id="secao-perguntas">
                     <img
                         src="../media-page/notas.png"
-                        alt=""
+                        alt="uma folha e uma caneta"
                         class="estilo-grid"
                         id="imagem-secao-perguntas"
                     />
@@ -312,21 +310,18 @@
                             >
                                 FALE CONOSCO
                             </h2>
-                            <!-- <label for="nome">Nome</label> -->
                             <input
                                 class="inputs-contato campo-formulario"
                                 type="text"
                                 id="nome"
                                 placeholder="Digite o seu nome"
                             />
-                            <!-- <label for="email">Email</label> -->
                             <input
                                 class="inputs-contato campo-formulario"
                                 type="text"
                                 id="email"
                                 placeholder="Digite o seu e-mail"
                             />
-                            <!-- <label for="mensagem">Sua Mensagem</label> -->
                             <textarea
                                 class="campo-formulario"
                                 name=""
@@ -340,15 +335,26 @@
                         </form>
                     </article>
                 </section>
+                <button class="btn" id="btn-return">
+                    <img
+                        id="img-return"
+                        src="../media-page/pra-cima.png"
+                        alt="icone de voltar ao topo"
+                    />
+                </button>
             </main>
-            <footer class="estilo-flex">
+            <footer class="estilo-flex" id="footer">
                 <figure class="figure-logo">
                     <img
                         src="../media-page/logo-estilizada.png"
-                        alt=""
+                        alt="logo do site imagem de carro e o nome 4Cars"
                         class="logo"
                     />
                 </figure>
+                <p class="endereco">
+                    Rua das Estrelas Cadentes, nº 123 Bairro dos Sonhos, Cidade
+                    dos Desejos CEP: 99999-999
+                </p>
                 <nav class="nav-inferior estilo-flex">
                     <ul class="lista-nav-inferior estilo-flex">
                         <li>

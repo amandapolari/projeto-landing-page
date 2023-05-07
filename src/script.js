@@ -1,21 +1,42 @@
-// Lógica do menu mobile:
+// MENU MOBILE:
+let menuMobile = document.querySelector('.mobile-menu');
+const imgHamb = document.querySelector('.hamb');
+const imgClose = document.querySelector('.x');
+const li = document.querySelectorAll('#menu-para-mobile li a');
+
 function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
+    imgHamb.classList.remove('active');
+    imgHamb.classList.add('hidden');
+    imgClose.classList.remove('hidden');
+    imgClose.classList.add('active');
+
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
+        imgHamb.classList.remove('hidden');
+        imgHamb.classList.add('active');
+        imgClose.classList.remove('active');
+        imgClose.classList.add('hidden');
     } else {
-        // Lógica para colocar o meu conteúdo logo em seguida do header:
         const novoElemento = document.createElement('div');
         const elementoExistente = document.getElementById('header');
         elementoExistente.insertAdjacentElement('afterend', novoElemento);
         const meuConteudo = document.getElementById('menu-para-mobile');
         novoElemento.appendChild(meuConteudo);
-        // ----
         menuMobile.classList.add('open');
     }
 }
 
-// Lógica para o formulário:
+li.forEach((item) => {
+    item.addEventListener('click', () => {
+        menuMobile.classList.remove('open');
+        imgHamb.classList.remove('hidden');
+        imgHamb.classList.add('active');
+        imgClose.classList.remove('active');
+        imgClose.classList.add('hidden');
+    });
+});
+
+// FORMULÁRIO:
 const inputsForm = document.querySelectorAll('.campo-formulario');
 const email = document.getElementById('email');
 const nome = document.getElementById('nome');
@@ -25,16 +46,13 @@ let msgAlerta;
 
 const verificaInputsVazios = (event) => {
     event.preventDefault();
-    console.log('O click está funcionando');
     if (nome.value == '' || email.value == '' || mensagem.value == '') {
-        // console.log('Algum campo está vazio');
         msgAlerta = "<p class='alert'>Por favor, preencha todos os campos</p>";
         document.getElementById('msgAlerta').innerHTML = msgAlerta;
         setTimeout(() => {
             document.getElementById('msgAlerta').innerHTML = '';
         }, 3200);
     } else {
-        // console.log('Todos os campos prenchidos');
         msgAlerta = `<p class='alert-concluido'>Muito obrigada pela confiança! Entraremos em contato através do e-mail ${email.value}</p>`;
         document.getElementById('msgAlerta').innerHTML = msgAlerta;
         setTimeout(() => {
@@ -45,5 +63,56 @@ const verificaInputsVazios = (event) => {
         });
     }
 };
-
 btn.addEventListener('click', verificaInputsVazios);
+
+// FUNÇÃO DE AJUSTE DE ALTURA
+const ajustarAltura = (event) => {
+    const href = event.target.getAttribute('href');
+    const distanciaTop = document.querySelector(href).offsetTop;
+    const alturaHeader = +window
+        .getComputedStyle(document.querySelector('header'))
+        .height.replace('px', '');
+    window.scrollTo({
+        top: distanciaTop - alturaHeader,
+    });
+};
+
+// AJUSTE DE ALTURA:
+// DESKTOP
+const nav = document.querySelectorAll('#navegacao-superior');
+const scrollTop = (event) => {
+    event.preventDefault();
+    ajustarAltura(event);
+};
+nav.forEach((elemento) => {
+    elemento.addEventListener('click', scrollTop);
+});
+
+// MOBILE
+const listaMenuMobile = document.querySelectorAll('#menu-para-mobile');
+const scrollTopMobile = (event) => {
+    event.preventDefault();
+    ajustarAltura(event);
+};
+listaMenuMobile.forEach((elemento) => {
+    elemento.addEventListener('click', scrollTopMobile);
+});
+
+// DIRECIONAMENTO PARA SEÇÃO CONTATO COM A ALTURA CORRETA
+const btnsParaContato = document.querySelectorAll('.ancora-dos-botoes');
+const direcionarLink = (event) => {
+    event.preventDefault();
+    ajustarAltura(event);
+};
+btnsParaContato.forEach((elemento) => {
+    elemento.addEventListener('click', direcionarLink);
+});
+
+// FUNÇÕES QUE RETORNAM AO TOPO -> ÍCONE SUPERIOR E BTN
+const botaoRetornar = document.getElementById('btn-return');
+const logo = document.querySelector('.logo');
+const retornarTopo = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+botaoRetornar.addEventListener('click', retornarTopo);
+logo.addEventListener('click', retornarTopo);

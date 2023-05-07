@@ -84,6 +84,10 @@ figure {
     height: 8vh;
 }
 
+.logo-superior {
+    cursor: pointer;
+}
+
 .estilo-grid {
     display: grid;
 }
@@ -485,6 +489,7 @@ footer {
     right: 1vw;
     z-index: 1002;
     border: none;
+    cursor: pointer;
 }
 
 #img-return {
@@ -498,10 +503,6 @@ footer {
 
 .alert {
     color: #f41b22;
-}
-
-.alert-concluido {
-    color: #ea9fa2;
 }
 
 /* CONFIG - MENU MOBILE */

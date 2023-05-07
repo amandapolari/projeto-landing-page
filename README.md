@@ -2,7 +2,7 @@
 
 <!-- <div align="center"> -->
 
-<!-- ![imagem do site](caminho) -->
+![funcionamento](./media-readme/pagina-inicial.png)
 
 <!-- </div> -->
 
@@ -23,6 +23,7 @@
 * [1. Resumo do projeto](#1-resumo-do-projeto)
 * [2. Desenho da interface do usuário](#2-desenho-da-interface-do-usuário)
 * [3. Paleta, padrão e cores](#3-paleta-padrão-e-cores)
+* [4. Gif das páginas](#4-gif-das-páginas)
 
 ***
 
@@ -78,3 +79,14 @@ Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?no
 
 
 ***
+
+## 4. Gif das páginas
+
+### Desktop
+![desktop](./media-readme/video-desktop-lp.gif)
+
+### Tablet
+![tablet](./media-readme/video-tablet-lp.gif)
+
+### Mobile
+![tablet](./media-readme/video-iphone-lp.gif)

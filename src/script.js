@@ -68,13 +68,11 @@ const verificaInputsVazios = (event) => {
         });
     }
 };
-
 btn.addEventListener('click', verificaInputsVazios);
 
 // Lógica da posição correta:
 // DESKTOP
 const nav = document.querySelectorAll('#navegacao-superior');
-
 const scrollTop = (event) => {
     event.preventDefault();
     const href = event.target.getAttribute('href');
@@ -86,14 +84,12 @@ const scrollTop = (event) => {
         top: distanciaTop - alturaHeader,
     });
 };
-
 nav.forEach((elemento) => {
     elemento.addEventListener('click', scrollTop);
 });
 
 // MOBILE
 const listaMenuMobile = document.querySelectorAll('#menu-para-mobile');
-
 const scrollTopMobile = (event) => {
     event.preventDefault();
     const href = event.target.getAttribute('href');
@@ -105,16 +101,12 @@ const scrollTopMobile = (event) => {
         top: distanciaTop - alturaHeader,
     });
 };
-
 listaMenuMobile.forEach((elemento) => {
     elemento.addEventListener('click', scrollTopMobile);
 });
 
-
-// RETORNAR AO TOPO
 // Botão Return
-const botaoRetornar = document.getElementById("btn-return");
-
-botaoRetornar.addEventListener("click", () =>
-  window.scrollTo({ top: 0, behavior: "smooth" })
+const botaoRetornar = document.getElementById('btn-return');
+botaoRetornar.addEventListener('click', () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 );

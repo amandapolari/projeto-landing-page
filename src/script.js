@@ -65,11 +65,8 @@ const verificaInputsVazios = (event) => {
 };
 btn.addEventListener('click', verificaInputsVazios);
 
-// AJUSTE DE ALTURA:
-// DESKTOP
-const nav = document.querySelectorAll('#navegacao-superior');
-const scrollTop = (event) => {
-    event.preventDefault();
+// FUNÇÃO DE AJUSTE DE ALTURA
+const ajustarAltura = (event) => {
     const href = event.target.getAttribute('href');
     const distanciaTop = document.querySelector(href).offsetTop;
     const alturaHeader = +window
@@ -78,6 +75,14 @@ const scrollTop = (event) => {
     window.scrollTo({
         top: distanciaTop - alturaHeader,
     });
+};
+
+// AJUSTE DE ALTURA:
+// DESKTOP
+const nav = document.querySelectorAll('#navegacao-superior');
+const scrollTop = (event) => {
+    event.preventDefault();
+    ajustarAltura(event);
 };
 nav.forEach((elemento) => {
     elemento.addEventListener('click', scrollTop);
@@ -87,14 +92,7 @@ nav.forEach((elemento) => {
 const listaMenuMobile = document.querySelectorAll('#menu-para-mobile');
 const scrollTopMobile = (event) => {
     event.preventDefault();
-    const href = event.target.getAttribute('href');
-    const distanciaTop = document.querySelector(href).offsetTop;
-    const alturaHeader = +window
-        .getComputedStyle(document.querySelector('header'))
-        .height.replace('px', '');
-    window.scrollTo({
-        top: distanciaTop - alturaHeader,
-    });
+    ajustarAltura(event);
 };
 listaMenuMobile.forEach((elemento) => {
     elemento.addEventListener('click', scrollTopMobile);
@@ -104,14 +102,7 @@ listaMenuMobile.forEach((elemento) => {
 const btnsParaContato = document.querySelectorAll('.ancora-dos-botoes');
 const direcionarLink = (event) => {
     event.preventDefault();
-    const href = event.target.getAttribute('href');
-    const distanciaTop = document.querySelector(href).offsetTop;
-    const alturaHeader = +window
-        .getComputedStyle(document.querySelector('header'))
-        .height.replace('px', '');
-    window.scrollTo({
-        top: distanciaTop - alturaHeader,
-    });
+    ajustarAltura(event);
 };
 btnsParaContato.forEach((elemento) => {
     elemento.addEventListener('click', direcionarLink);

@@ -111,10 +111,8 @@ btnsParaContato.forEach((elemento) => {
 // FUNÇÕES QUE RETORNAM AO TOPO -> ÍCONE SUPERIOR E BTN
 const botaoRetornar = document.getElementById('btn-return');
 const logo = document.querySelector('.logo');
-
 const retornarTopo = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-
 botaoRetornar.addEventListener('click', retornarTopo);
 logo.addEventListener('click', retornarTopo);

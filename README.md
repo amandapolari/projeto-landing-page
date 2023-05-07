@@ -53,10 +53,10 @@ Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você p
 ![wireframe-2](./media-readme/desktop.png)
 
 #### 2.2.2 Modelo para Tablet
-![wireframe-2](./media-readme/ipad-pro-11.png)
+Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
 
 #### 2.2.3 Modelo para iPhone 8
-![wireframe-2](./media-readme/iphone-8.png)
+Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
 
 ***
 
@@ -75,5 +75,6 @@ Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você p
 `#EA9FA2`
 
 `#FA5D65`
+
 
 ***

@@ -1,4 +1,4 @@
-// Lógica do menu mobile:
+// MENU MOBILE:
 let menuMobile = document.querySelector('.mobile-menu');
 const imgHamb = document.querySelector('.hamb');
 const imgClose = document.querySelector('.x');
@@ -17,13 +17,11 @@ function menuShow() {
         imgClose.classList.remove('active');
         imgClose.classList.add('hidden');
     } else {
-        // Lógica para colocar o meu conteúdo logo em seguida do header:
         const novoElemento = document.createElement('div');
         const elementoExistente = document.getElementById('header');
         elementoExistente.insertAdjacentElement('afterend', novoElemento);
         const meuConteudo = document.getElementById('menu-para-mobile');
         novoElemento.appendChild(meuConteudo);
-        // ----
         menuMobile.classList.add('open');
     }
 }
@@ -38,7 +36,7 @@ li.forEach((item) => {
     });
 });
 
-// Lógica para o formulário:
+// FORMULÁRIO:
 const inputsForm = document.querySelectorAll('.campo-formulario');
 const email = document.getElementById('email');
 const nome = document.getElementById('nome');
@@ -70,7 +68,7 @@ const verificaInputsVazios = (event) => {
 };
 btn.addEventListener('click', verificaInputsVazios);
 
-// Lógica da posição correta:
+// AJUSTE DE ALTURA:
 // DESKTOP
 const nav = document.querySelectorAll('#navegacao-superior');
 const scrollTop = (event) => {

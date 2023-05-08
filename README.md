@@ -1,12 +1,14 @@
 <h1 align="center"> Landing Page </h1>
 
-<!-- <div align="center"> -->
+<div align="center">
 
-![funcionamento](./media-readme/pagina-inicial.png)
+Clique [aqui](projeto-landing-page-amanda-polari.surge.sh) para conferir o resultado final!
 
-<!-- </div> -->
+![funcionamento](./src/media-readme/pagina-inicial.png)
 
-<p align="center"><strong>Status do Projeto:<br></strong> <i>Em Construção </i>🏗️</p>
+</div>
+
+<p align="center"><strong>Status do Projeto:<br></strong> <i>Concluído</i> ✔</p>
 
 <p align="center">
 <span><strong>Tecnologias Utilizadas:</strong></span>
@@ -45,13 +47,13 @@ A *4Cars* é uma empresa que tem surfado na onda dos apps de motoristas. Sua pro
 
 O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue o modelo inicial:
 
-![wireframe-2](./media-readme/wireframe-2.jpg)
+![wireframe-2](./src/media-readme/wireframe-2.jpg)
 
 ### 2.2 Protótipo de Alta Fidelidade
 Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você pode conferir os modelos clicando [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
 
 #### 2.2.1 Modelo Desktop
-![wireframe-2](./media-readme/desktop.png)
+![wireframe-2](./src/media-readme/desktop.png)
 
 #### 2.2.2 Modelo para Tablet
 Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
@@ -63,7 +65,7 @@ Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?no
 
 ## 3. Paleta, padrão e cores
 ### Paleta de cores:
-![paleta-de-cores](./media-readme/paleta-de-cores.png)
+![paleta-de-cores](./src/media-readme/paleta-de-cores.png)
 ### Cores em hexadecimal:
 `#000000`
 
@@ -83,10 +85,10 @@ Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?no
 ## 4. Gif das páginas
 
 ### Desktop
-![desktop](./media-readme/video-desktop-lp.gif)
+![desktop](./src/media-readme/video-desktop-lp.gif)
 
 ### Tablet
-![tablet](./media-readme/video-tablet-lp.gif)
+![tablet](./src/media-readme/video-tablet-lp.gif)
 
 ### Mobile
-![tablet](./media-readme/video-iphone-lp.gif)
+![tablet](./src/media-readme/video-iphone-lp.gif)

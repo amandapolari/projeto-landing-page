@@ -2,9 +2,9 @@
 
 <div align="center">
 
-Clique [aqui]([projeto-landing-page-amanda-polari.surge.sh](http://projeto-landing-page-amanda-polari.surge.sh/)) para conferir o resultado final!
+Clique [aqui](http://projeto-landing-page-amanda-polari.surge.sh/) para conferir o resultado final!
 
-![funcionamento](./src/media-readme/pagina-inicial.png)
+![funcionando](./src/media-readme/video-desktop-lp.gif)
 
 </div>
 

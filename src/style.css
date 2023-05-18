@@ -393,7 +393,7 @@ h1 {
 
 /* QUINTA SECTION - CONTATO | FORM */
 #secao-contato {
-    background-image: url(/media-page/escritorio-com-filtro.png);
+    background-image: url(./media-page/escritorio-com-filtro.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -711,7 +711,7 @@ footer {
     #secao-perguntas {
         display: grid;
         grid-template: repeat(2, auto) / auto;
-        background-image: url(/media-page/notas-p.png);
+        background-image: url(./media-page/notas-p.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -756,7 +756,7 @@ footer {
     #secao-contato {
         display: grid;
         grid-template: 1fr / 1fr;
-        background-image: url(/media-page/escritorio-com-filtro-p.png);
+        background-image: url(./media-page/escritorio-com-filtro-p.png);
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
@@ -1047,7 +1047,7 @@ footer {
     #secao-perguntas {
         display: grid;
         grid-template: 0.6fr auto auto auto auto / auto;
-        background-image: url(/media-page/notas-p.png);
+        background-image: url(./media-page/notas-p.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -1094,7 +1094,7 @@ footer {
     #secao-contato {
         display: grid;
         grid-template: 1fr / 1fr;
-        background-image: url(/media-page/escritorio-com-filtro-p.png);
+        background-image: url(./media-page/escritorio-com-filtro-p.png);
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;

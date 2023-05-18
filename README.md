@@ -2,20 +2,18 @@
 
 <div align="center">
 
-Clique [aqui](http://projeto-landing-page-amanda-polari.surge.sh/) para conferir o resultado final!
-
 ![funcionando](./src/media-readme/video-desktop-lp.gif)
+  
+ Clique [aqui](http://projeto-landing-page-amanda-polari.surge.sh/) para conferir o resultado final!
 
 </div>
 
 <p align="center"><strong>Status do Projeto:<br></strong> <i>Concluído</i> ✔</p>
 
 <p align="center">
-<span><strong>Tecnologias Utilizadas:</strong></span>
+<span><strong>Tecnologias e Ferramentas Utilizadas:</strong></span>
 <br>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,git" style="height: 25px;"/>
-  </a>
+    <img src="https://skillicons.dev/icons?i=html,css,js,git,github,figma" style="height: 30px;"/>
 </p>
 
 ***
@@ -50,17 +48,9 @@ O wireframe foi desenvolvido no [GoodNotes](https://www.goodnotes.com/), segue o
 ![wireframe-2](./src/media-readme/wireframe-2.jpg)
 
 ### 2.2 Protótipo de Alta Fidelidade
-Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você pode conferir os modelos clicando [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
+Os protótipos foram desenvolvidos no [Figma](https://www.figma.com/), e você pode conferir os modelos para Desktop, Tablet e Mobile clicando [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
 
-#### 2.2.1 Modelo Desktop
-![wireframe-2](./src/media-readme/desktop.png)
-
-#### 2.2.2 Modelo para Tablet
-Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
-
-#### 2.2.3 Modelo para iPhone 8
-Confira [aqui](https://www.figma.com/file/hDtBikCgEdp8ivPGfEHyls/landing-page?node-id=0%3A1&t=HJv8MQKx9oU5JSlG-1).
-
+![image](https://github.com/amandapolari/projeto-landing-page/assets/97640319/26473dae-f745-44d2-b372-75cb810f9991)
 ***
 
 ## 3. Paleta, padrão e cores
